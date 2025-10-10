@@ -1,0 +1,34 @@
+#Schritt-für-Schritt
+#Erstelle eine Liste tasks = [].
+#Zeige dem Nutzer ein Menü (z. B. „1 = Hinzufügen“, „2 = Anzeigen“,
+#  "3. Aufgabe löschen", "4. Beenden", du kannst so viele einbauen wie du willst).
+#Reagiere auf Eingaben mit if-Bedingungen.
+#Speichere Aufgaben in einer Datei („tasks.txt“), 
+# damit sie beim Neustart nicht verloren gehen.
+
+tasklist = []
+
+Fertig = False
+
+while Fertig == False:
+   print("    ")
+   print("1. Add")
+   print("2. Show")
+   print("3. Delete")
+   print("4. Close")
+   status = (input("Was möchten Sie machen? "))
+
+   if status == "Add":
+     tasklist.append(input("Was möchten Sie hinzufügen? "))
+   elif status == "Show": 
+     print(tasklist)
+   elif status == "Delete": 
+     tasklist.remove(input("Was soll gelöscht werden?"))
+   elif status == "Close": 
+      print("Programm wird beendet!")
+      Fertig = True
+   else:
+     print("Nochmal eintippen!")
+  
+    
+
