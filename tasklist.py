@@ -30,5 +30,6 @@ while Fertig == False:
    else:
      print("Nochmal eintippen!")
   
-    
+    # noch zu machen: Text datei speichern und ändern können, case sensitivity machen
+    #und mit zahlen auch auswählen können
 
