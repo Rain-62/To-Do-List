@@ -33,3 +33,4 @@ while Fertig == False:
     # noch zu machen: Text datei speichern und ändern können, case sensitivity machen
     #und mit zahlen auch auswählen können
 
+#test
