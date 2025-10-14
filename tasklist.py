@@ -18,13 +18,13 @@ while Fertig == False:
    print("4. Close")
    status = (input("Was möchten Sie machen? "))
 
-   if status == "Add":
+   if status == "Add" or status == "1":
      tasklist.append(input("Was möchten Sie hinzufügen? "))
-   elif status == "Show": 
+   elif status == "Show" or status == "2": 
      print(tasklist)
-   elif status == "Delete": 
+   elif status == "Delete" or status == "3": 
      tasklist.remove(input("Was soll gelöscht werden?"))
-   elif status == "Close": 
+   elif status == "Close" or status == "4": 
       print("Programm wird beendet!")
       Fertig = True
    else:
