@@ -1,10 +1,3 @@
-#Schritt-für-Schritt
-#Erstelle eine Liste tasks = [].
-#Zeige dem Nutzer ein Menü (z. B. „1 = Hinzufügen“, „2 = Anzeigen“,
-#  "3. Aufgabe löschen", "4. Beenden", du kannst so viele einbauen wie du willst).
-#Reagiere auf Eingaben mit if-Bedingungen.
-#Speichere Aufgaben in einer Datei („tasks.txt“), 
-# damit sie beim Neustart nicht verloren gehen.
 
 tasklist = [] 
 with open ("Text.txt") as f:
@@ -34,7 +27,5 @@ while Fertig == False:
         f.write(liste)
       Fertig = True
    else:
+     
      print("Nochmal eintippen!")
-  
-    # noch zu machen: Text datei speichern und ändern können, case sensitivity machen
-    #und mit zahlen auch auswählen 
