@@ -6,7 +6,9 @@
 #Speichere Aufgaben in einer Datei („tasks.txt“), 
 # damit sie beim Neustart nicht verloren gehen.
 
-tasklist = []
+tasklist = [] 
+with open ("Text.txt") as f:
+  tasklist = [f.read()]
 
 Fertig = False
 
@@ -26,12 +28,13 @@ while Fertig == False:
      tasklist.remove(input("Was soll gelöscht werden?"))
    elif status == "Close" or status == "4": 
       print("Programm wird beendet!")
+      
+      liste = ", ".join(tasklist)
+      with open ("Text.txt", "w") as f:
+        f.write(liste)
       Fertig = True
    else:
      print("Nochmal eintippen!")
   
     # noch zu machen: Text datei speichern und ändern können, case sensitivity machen
     #und mit zahlen auch auswählen 
-
-
-print("dies ist nur ein test!")
